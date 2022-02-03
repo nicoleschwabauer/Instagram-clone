@@ -1,0 +1,650 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 253, 253);
+  font-family: "Billabong";
+  margin: 0;
+}
+
+li,
+a {
+  color: black;
+}
+
+/* obere Navigationsleiste */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-bottom: solid 1px rgb(202, 202, 202);
+  position: fixed;
+  width: 100%;
+}
+
+.nav-logo {
+  height: 45px;
+  cursor: pointer;
+  vertical-align: middle;
+  width: 120px;
+}
+
+form.nav-search input[type="text"] {
+  background-color: rgb(253, 253, 253);
+  border: rgba(210, 210, 210);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 250px;
+  font-style: black;
+}
+
+/* Main on the left top (insta storys) */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.main {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-storys {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid lightgray;
+  margin: 2rem 2rem;
+  background-color: white;
+}
+
+.main-storys-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+
+.main-storys-info p {
+  color: #262626;
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.single-img {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  border: 2px solid rgb(231, 69, 96);
+  padding: 2px;
+}
+
+.main-storys-button {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.main-storys-button a {
+  color: black;
+  float: left;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  font-size: 6px;
+  padding: 5px 8px;
+}
+
+.main-storys-button a:hover:not(.active) {
+  background-color: white;
+}
+
+/*Main on the left (insta-posts)*/
+
+.insta-post {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid lightgray;
+  margin: 2rem 2rem;
+  background-color: white;
+}
+
+.insta-post-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/*header of insta post*/
+
+.info-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.header-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.single-img-2 {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.info-name {
+  padding-left: 1rem;
+}
+
+.hover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.info-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 4px;
+}
+
+.fa {
+  margin: 0 1px;
+}
+
+/* Post Image */
+
+.post-img {
+  width: 100%;
+  height: 70%;
+}
+
+/* */
+
+.post-links {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.post-links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.post-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.bookmark {
+  display: inline-block;
+}
+
+/* insta post comment section*/
+
+.post-comments {
+  padding-left: 15px;
+  line-height: 2;
+}
+
+.post-comments h4 {
+  color: rgb(187, 179, 179);
+  font-size: 13px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.comments-font {
+  font-size: 14px;
+}
+
+.at {
+  color: #00376b;
+}
+
+.time {
+  font-size: 10px;
+}
+
+/* comment textarea + submit button on the post bottom */
+
+hr {
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  opacity: 0.4;
+}
+
+.info-footer-format {
+  padding: 0 10px 10px 15px;
+}
+
+.comments-section {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.comments-textarea {
+  height: 15px;
+  background: 0 0;
+  border: 0;
+  color: #262626;
+  display: flex;
+  flex-grow: 1;
+  font-size: inherit;
+  font-size: 13px;
+  max-height: 80px;
+  outline: 0;
+  padding: 0;
+  resize: none;
+  width: 0;
+}
+
+textarea {
+  line-height: 18px;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: flex-start;
+  cursor: text;
+  font: 400 13.3333px Arial;
+  margin-left: 3%;
+}
+
+button {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  font: 400 13.3333px Arial;
+}
+
+.comments-submit {
+  pointer-events: none;
+  color: #0095f6;
+  /* opacity: 0.3; */
+  padding: 0;
+  appearance: none;
+  background: 0 0;
+  border: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  width: auto;
+}
+
+.form {
+  font: inherit;
+}
+
+/* section on the right side with account names */
+
+.side {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-top: 30px;
+}
+
+.sideboard {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2.5rem;
+}
+
+.sideboard-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sideboard-box-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sideboard-box-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.sideboard-box-2 h4 {
+  font-size: 13px;
+  color: rgb(163, 159, 159);
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.sideboard-box-2 p {
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.sideboard-img-1 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.profile-1 {
+  padding-left: 20px;
+  font-size: 11px;
+  color: #262626;
+  font-weight: 600;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.follow {
+  color: #0095f6;
+  font-size: 13px;
+  font-weight: 550;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.sideboard-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  font-size: 12px;
+  color: #262626;
+  padding-left: 10px;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.profile p {
+  font-size: 11px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-weight: 400;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+/* Footer on the right side bottom */
+
+.footer {
+  display: flex;
+  list-style: none;
+  color: #c7c7c7;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Medie Queries */
+
+@media (max-width: 1600px) {
+  .main {
+    width: 35em;
+  }
+  .side {
+    width: 20em;
+  }
+  .info-name {
+    font-size: 14px;
+    padding-left: 0.5rem;
+  }
+  .info-header {
+    padding: 7px 7px;
+  }
+  .info-menu {
+    font-size: 4px;
+  }
+  .post-links {
+    font-size: 15px;
+  }
+  .main-storys-info {
+    width: 10px;
+    flex-wrap: nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .single-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .main {
+    width: 35em;
+  }
+  .side {
+    width: 20em;
+  }
+  .info-name {
+    font-size: 14px;
+    padding-left: 0.5rem;
+  }
+  .info-header {
+    padding: 7px 7px;
+  }
+  .info-menu {
+    font-size: 4px;
+  }
+  .post-links {
+    font-size: 15px;
+  }
+  .main-storys-info {
+    width: 10px;
+    flex-wrap: nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .single-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    width: 35em;
+  }
+  .side {
+    display: none;
+  }
+  .info-name {
+    font-size: 14px;
+    padding-left: 0.5rem;
+  }
+  .info-header {
+    padding: 7px 7px;
+  }
+  .info-menu {
+    font-size: 4px;
+  }
+  .post-links {
+    font-size: 15px;
+  }
+  .main-storys-info {
+    width: 10px;
+    flex-wrap: nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .single-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main {
+    width: 30em;
+  }
+  .side {
+    display: none;
+  }
+  .nav-search {
+    display: none;
+  }
+  .info-name {
+    font-size: 14px;
+    padding-left: 0.5rem;
+  }
+  .info-header {
+    padding: 7px 7px;
+  }
+  .info-menu {
+    font-size: 4px;
+  }
+  .post-links {
+    font-size: 15px;
+  }
+  .main-storys-info {
+    width: 10px;
+    flex-wrap: nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .single-img {
+    width: 50px;
+    height: 50px;
+  }
+  .visibility {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .side {
+    display: none;
+  }
+  .main {
+    width: 30em;
+  }
+  .nav-search {
+    display: none;
+  }
+  .visibility {
+    display: none;
+  }
+  .info-name {
+    font-size: 14px;
+    padding-left: 0.5rem;
+  }
+  .info-header {
+    padding: 7px 7px;
+  }
+  .info-menu {
+    font-size: 4px;
+  }
+  .post-links {
+    font-size: 15px;
+  }
+  .side {
+    display: none;
+  }
+  .main-storys-info {
+    width: 10px;
+    flex-wrap: nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .single-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav-search {
+    display: none;
+  }
+  .info-header {
+    padding: 8px 7px;
+  }
+  .info-name {
+    font-size: 14px;
+    padding-left: 0.5rem;
+  }
+  .info-menu {
+    font-size: 4px;
+  }
+  .post-links {
+    font-size: 13px;
+  }
+  .side {
+    display: none;
+  }
+  .main-storys-info {
+    width: 10px;
+    flex-wrap: nowrap;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .single-img {
+    width: 50px;
+    height: 50px;
+  }
+}
